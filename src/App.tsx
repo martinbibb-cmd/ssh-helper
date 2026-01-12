@@ -1,44 +1,18 @@
-import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './components/Layout';
-import { Home } from './pages/Home';
-import { Hosts } from './pages/Hosts';
-import { Builder } from './pages/Builder';
-import { Help } from './pages/Help';
-import { About } from './pages/About';
-import { initStorage } from './utils/storage';
-
+// Minimal test version - checking if React works
 function App() {
-  useEffect(() => {
-    initStorage();
-
-    // Register service worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker
-          .register('/sw.js')
-          .then(registration => {
-            console.log('SW registered:', registration);
-          })
-          .catch(error => {
-            console.log('SW registration failed:', error);
-          });
-      });
-    }
-  }, []);
-
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/hosts" element={<Hosts />} />
-          <Route path="/builder" element={<Builder />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <div style={{ padding: '2rem', fontFamily: 'sans-serif', background: '#f7fafc', minHeight: '100vh' }}>
+      <h1 style={{ color: '#667eea' }}>SSH Helper - React Test</h1>
+      <p>✅ If you can see this, React is working!</p>
+      <p>Now check the browser console (F12) for any JavaScript errors.</p>
+      <hr style={{ margin: '2rem 0' }} />
+      <p><strong>If this works, the issue is with:</strong></p>
+      <ul>
+        <li>React Router compatibility with React 19</li>
+        <li>One of the page components</li>
+        <li>Or the service worker</li>
+      </ul>
+    </div>
   );
 }
 
