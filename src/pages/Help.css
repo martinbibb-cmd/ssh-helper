@@ -1,0 +1,148 @@
+.help-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.help-header {
+  margin-bottom: 2rem;
+}
+
+.help-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: #2d3748;
+  font-size: 1.75rem;
+}
+
+.help-header p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 1.05rem;
+}
+
+.troubleshooting-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.troubleshooting-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.error-title {
+  margin: 0 0 1rem 0;
+  color: #c53030;
+  font-size: 1.15rem;
+  font-family: 'Courier New', Courier, monospace;
+  background: #fed7d7;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.meaning-section,
+.fixes-section {
+  margin-top: 1.25rem;
+}
+
+.meaning-section h4,
+.fixes-section h4 {
+  margin: 0 0 0.75rem 0;
+  color: #2d3748;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.meaning-section p {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.fixes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fix-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+  background: #f7fafc;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.fix-command {
+  flex: 1;
+  padding: 0.75rem;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #2d3748;
+  word-break: break-all;
+}
+
+.fix-copy-btn {
+  padding: 0.75rem 1rem;
+  background: #3182ce;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.fix-copy-btn:hover {
+  background: #2c5282;
+}
+
+.fix-copy-btn:active {
+  background: #2a4365;
+}
+
+.help-tip {
+  background: #e6fffa;
+  border: 1px solid #81e6d9;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.help-tip h3 {
+  margin: 0 0 1rem 0;
+  color: #234e52;
+  font-size: 1.15rem;
+}
+
+.help-tip ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #234e52;
+}
+
+.help-tip li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.help-tip li:last-child {
+  margin-bottom: 0;
+}
+
+.help-tip code {
+  background: #b2f5ea;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
