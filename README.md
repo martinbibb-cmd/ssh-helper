@@ -78,14 +78,14 @@ netlify deploy --prod --dir=dist
 
 ### Deploy to GitHub Pages
 
-1. Install gh-pages: `npm install -g gh-pages`
-2. Update `vite.config.ts` to set `base: '/your-repo-name/'`
-3. Build and deploy:
+This repository is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` branch.
 
-```bash
-npm run build
-gh-pages -d dist
-```
+The deployment workflow:
+1. Builds the application with `npm run build`
+2. Deploys the `dist` folder to GitHub Pages
+3. Makes the site available at `https://martinbibb-cmd.github.io/ssh-helper/`
+
+To trigger a deployment, simply push changes to the `main` branch.
 
 ### Deploy to Vercel
 
